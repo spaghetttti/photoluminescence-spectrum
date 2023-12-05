@@ -68,9 +68,9 @@ def main(file_path, window_size=10):
     windows = organize_data(wavelengths, intensities, window_size)  # Organize data into windows
     statistics = calculate_statistics(windows)  # Calculate statistics for each window
     
-    # Display statistics for each window
-    for window, stats in statistics.items():
-        print(f"Window: {window}, Statistics: {stats}")
+    # # Display statistics for each window COMMENTED OUT BY DEFAULT BECAUSE OUTPUT CAN BE A LARGE DATA SET
+    # for window, stats in statistics.items():
+    #     print(f"Window: {window}, Statistics: {stats}")
 
 if __name__ == "__main__":
     if len(sys.argv) < 2:
