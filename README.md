@@ -1,5 +1,5 @@
 # photoluminescence-spectrum
-
+https://github.com/spaghetttti/photoluminescence-spectrum
 ### Version Française :
 
 #### Vue d'ensemble du Projet : Analyse de Spectre de Photoluminescence
@@ -66,14 +66,14 @@ The project aims to analyze photoluminescence spectrum data obtained from a file
         - `read_spectrum_file(file_path)`: Reads and extracts wavelengths and intensities from the spectrum file.
         - `organize_data(wavelengths, intensities, window_size=10)`: Segments intensity data into specified wavelength windows.
         - `calculate_statistics(intensity_data)`: Computes statistical metrics for intensity data within each wavelength window.
-    
+
 2. **`recherche_plot.py`**:
     - **Functionalities**:
         - Graphically visualizes intensity data within a user-specified wavelength range.
     - **Functions**:
         - `read_intensity_data(file_path)`: Reads and extracts intensities at specific markers from the spectrum file.
         - `plot_intensity(wavelengths, intensities, start, end)`: Plots intensity values within a given wavelength range.
-    
+
 3. **`main.sh`** (Bash Script):
     - Orchestrates the execution of Python scripts (`intensite.py` and `recherche_plot.py`).
     - Manages user interaction, executes data processing, and visualization based on user input.
